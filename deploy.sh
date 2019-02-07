@@ -5,6 +5,7 @@ docker push muyidocker/multi-client:latest
 docker push muyidocker/multi-server:latest
 docker push muyidocker/multi-worker:latest
 
+
 docker push muyidocker/multi-client:$SHA
 docker push muyidocker/multi-server:$SHA
 docker push muyidocker/multi-worker:$SHA
