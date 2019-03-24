@@ -10,6 +10,6 @@ docker push muyidocker/multi-client:$SHA
 docker push muyidocker/multi-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deployment server=muyidocker/server:$SHA
-kubectl set image deployments/client-deployment client=muyidocker/client:$SHA
-kubectl set image deployments/worker-deployment worker=muyidocker/worker:$SHA
+kubectl set image deployments/server-deployment server=muyidocker/multi-server:$SHA
+kubectl set image deployments/client-deployment client=muyidocker/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=muyidocker/multi-worker:$SHA
